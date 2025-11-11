@@ -1,0 +1,32 @@
+#!/bin/bash
+
+dataset=labram_0_regression_drug_embed
+for fold in {0..0}
+do
+    echo "Running training for fold ${fold}..."
+       python  run_class_finetune_for_embedding.py \
+        --fold ${fold} \
+        --dataset ${dataset} \
+        --gpu_id 9 \
+        --output_dir ./checkpoints/${dataset}/fold${fold}/ \
+        --log_dir ./log/${dataset}/fold${fold} \
+        --model labram_base_patch200_200 \
+        --finetune finetune_model/checkpoint-4.pth \
+        --swanlab_project LaBraM_regression_drug_embed\
+        --weight_decay 0.005 \
+        --batch_size 256 \
+        --lr 1e-5 \
+        --update_freq 5 \
+        --warmup_epochs 9 \
+        --epochs 120 \
+        --layer_decay 0.85 \
+        --drop_path 0.1 \
+        --dist_eval \
+        --save_ckpt_freq 5 \
+        --disable_rel_pos_bias \
+        --abs_pos_emb \
+        --disable_qkv_bias \
+        --seed 998244353   
+
+done
+

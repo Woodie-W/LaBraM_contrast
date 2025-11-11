@@ -1,0 +1,78 @@
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v25.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to sxk@166.111.102.196                                 │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✓  (remote display is forwarded through SSH)  │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-210-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+18 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '18.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Jul 19 14:34:52 2025 from 101.6.145.2
+(base) sxk@ubuntu:~$ conda activate labram
+(labram) sxk@ubuntu:~$ cd /data/sxk
+(labram) sxk@ubuntu:/data/sxk$ tmux ls
+123: 1 windows (created Thu Jul 17 21:32:05 2025) [177x47]
+(labram) sxk@ubuntu:/data/sxk$ tmux a -t 123
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_close/SXMU-ERP/20chs
+Val:  [0/7]  eta: 0:00:03  loss: 0.1535 (3.8483)  time: 0.4911  data: 0.4286  max mem: 5416
+Val:  [6/7]  eta: 0:00:00  loss: 5.5258 (3.9023)  time: 0.1233  data: 0.0614  max mem: 5416
+Val: Total time: 0:00:01 (0.1575 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_unknown/LEMON/61chs
+Val:  [  0/124]  eta: 0:01:18  loss: 5.5254 (3.8827)  time: 0.6345  data: 0.4731  max mem: 5416
+Val:  [ 30/124]  eta: 0:00:13  loss: 0.1973 (3.3778)  time: 0.1305  data: 0.0001  max mem: 5416
+Val:  [ 60/124]  eta: 0:00:08  loss: 0.1974 (2.9946)  time: 0.1315  data: 0.0001  max mem: 5416
+Val:  [ 90/124]  eta: 0:00:04  loss: 0.1974 (2.6939)  time: 0.1306  data: 0.0001  max mem: 5416
+Val:  [120/124]  eta: 0:00:00  loss: 0.1973 (2.4515)  time: 0.1307  data: 0.0001  max mem: 5416
+Val:  [123/124]  eta: 0:00:00  loss: 0.1974 (2.4298)  time: 0.1278  data: 0.0001  max mem: 5416
+Val: Total time: 0:00:16 (0.1363 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_open/HUAWEI_eye_open/30chs
+Val:  [ 0/11]  eta: 0:00:06  loss: 0.1974 (2.4227)  time: 0.6036  data: 0.4524  max mem: 5416
+Val:  [10/11]  eta: 0:00:00  loss: 0.2095 (2.3542)  time: 0.1691  data: 0.0413  max mem: 5416
+Val: Total time: 0:00:02 (0.1905 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_open/HUAWEI_eye_open/59chs
+Val:  [0/9]  eta: 0:00:04  loss: 0.2097 (2.3476)  time: 0.5419  data: 0.3957  max mem: 5416
+Val:  [8/9]  eta: 0:00:00  loss: 0.2098 (2.2964)  time: 0.1742  data: 0.0441  max mem: 5416
+Val: Total time: 0:00:01 (0.2002 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_close/HUAWEI_eye_close/30chs
+Val:  [ 0/11]  eta: 0:00:06  loss: 0.2098 (2.2902)  time: 0.5480  data: 0.3870  max mem: 5416
+Val:  [10/11]  eta: 0:00:00  loss: 0.2098 (2.2295)  time: 0.1635  data: 0.0353  max mem: 5416
+Val: Total time: 0:00:02 (0.1848 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_close/HUAWEI_eye_close/59chs
+Val:  [0/9]  eta: 0:00:05  loss: 0.2098 (2.2237)  time: 0.6059  data: 0.4585  max mem: 5416
+Val:  [8/9]  eta: 0:00:00  loss: 0.2098 (2.1782)  time: 0.1807  data: 0.0511  max mem: 5416
+Val: Total time: 0:00:01 (0.2066 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_unknown/57_Predict-Depression-Rest-New/60chs
+Val:  [ 0/30]  eta: 0:00:16  loss: 0.2098 (2.1726)  time: 0.5664  data: 0.4201  max mem: 5416
+Val:  [29/30]  eta: 0:00:00  loss: 0.2092 (2.0235)  time: 0.1284  data: 0.0001  max mem: 5416
+Val: Total time: 0:00:04 (0.1510 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_close/60_ANDing/20chs
+Val:  [0/1]  eta: 0:00:00  loss: 0.2093 (2.0327)  time: 0.3252  data: 0.2708  max mem: 5416
+Val: Total time: 0:00:00 (0.4588 s / it)
+data_loader:  /data/sxk/labram2_resting_fine_pool/resting_eye_open/60_ANDing/20chs
+Val:  [0/1]  eta: 0:00:00  loss: 0.2097 (2.0418)  time: 0.3904  data: 0.3018  max mem: 5416
+Val: Total time: 0:00:00 (0.5239 s / it)
+* loss 2.042
+each cls (tensor([0, 1, 2, 3, 4, 5, 6, 7, 8]), tensor([15660,  1991,   756,   216,    23,  1392,  1015,  1637,   216])) (tensor([0]), tensor([22906]))
+0.1111111111111111 {'accuracy': 0.6836636689077098, 'balanced_accuracy': 0.1111111111111111, 'loss': 2.0417843893325576, 'balanced_accuracy_old': 0.1111111111111111, 'accuracy_old': 0.6836636662483215}
+Accuracy of the network on the 23750 val EEG: 0.68%
+Max accuracy val: 0.68%
+Training time 12:09:00
+(labram) sxk@ubuntu:/data/sxk/LaBraM$
